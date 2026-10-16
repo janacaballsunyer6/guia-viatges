@@ -19,6 +19,7 @@
       :pais="dest.pais"
       :continent="dest.continent"
       :descripcio="dest.descripcio"
+      :imatge="dest.imatge"
     />
   </div>
 </template>
