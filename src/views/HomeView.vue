@@ -23,9 +23,9 @@
 
   </div>
 
-  <div class="right">
-    https://images.unsplash.com/photo-1500530855697-b586d89ba3ee
-  </div>
+<div class="right">
+  https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80
+</div>
 
 </section>
 
@@ -55,9 +55,10 @@
 .hero{
   min-height:80vh;
   display:grid;
-  grid-template-columns:1fr 500px;
-  gap:60px;
+  grid-template-columns:1.2fr .8fr;
+  gap:80px;
   align-items:center;
+  padding:40px 0;
 }
 
 .small{
@@ -67,10 +68,9 @@
 
 h1{
   font-family:'Bebas Neue';
-  font-size:10rem;
-  line-height:.8;
+  font-size:clamp(8rem,12vw,13rem);
+  line-height:.85;
   color:#5D8EF0;
-  margin:20px 0;
 }
 
 p{
