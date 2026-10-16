@@ -1,16 +1,14 @@
 <template>
   <div class="card">
+    <div class="badge">{{ continent }}</div>
+
     <h2>{{ nom }}</h2>
 
-    <p>
-      <strong>País:</strong> {{ pais }}
-    </p>
+    <p><strong>🌍 País:</strong> {{ pais }}</p>
 
-    <p>
-      <strong>Continent:</strong> {{ continent }}
+    <p class="desc">
+      {{ descripcio }}
     </p>
-
-    <p>{{ descripcio }}</p>
   </div>
 </template>
 
@@ -26,18 +24,34 @@ defineProps({
 <style scoped>
 .card {
   background: white;
-  border-radius: 15px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,.15);
-  transition: transform 0.3s;
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,.08);
+  transition: all .3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+}
+
+.badge {
+  background: #dbeafe;
+  color: #1d4ed8;
+  display: inline-block;
+  padding: .4rem .8rem;
+  border-radius: 30px;
+  font-size: .8rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  color: #d21991;
+  margin: 0;
+  color: #0f172a;
+}
+
+.desc {
+  color: #64748b;
+  line-height: 1.6;
 }
 </style>

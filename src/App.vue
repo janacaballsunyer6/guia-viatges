@@ -22,31 +22,34 @@ import SiteFooter from './components/SiteFooter.vue'
 <style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5f7fa;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: #f8fafc;
 }
 
 nav {
-  background: #0f4c81;
+  background: white;
   padding: 1rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+  position: sticky;
+  top: 0;
 }
 
 nav a {
-  color: white;
   text-decoration: none;
-  font-weight: bold;
+  color: #334155;
+  font-weight: 600;
 }
 
 nav a:hover {
-  color: #ffd54f;
+  color: #2563eb;
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
-  padding: 2rem;
+  padding: 3rem 2rem;
 }
 </style>

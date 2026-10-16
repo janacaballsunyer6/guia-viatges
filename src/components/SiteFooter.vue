@@ -1,15 +1,15 @@
 <template>
   <footer>
-    <p>© 2026 Guia de Viatges</p>
+    © 2026 Guia de Viatges · Desenvolupat amb Vue i Firebase
   </footer>
 </template>
 
 <style scoped>
 footer {
-  background: #0f4c81;
+  background: #0f172a;
   color: white;
   text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
+  padding: 2rem;
+  margin-top: 4rem;
 }
 </style>

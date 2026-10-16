@@ -1,34 +1,46 @@
 <template>
-  <section class="home">
-    <h1>Benvingut a la Guia de Viatges</h1>
+  <div class="home">
+    <h1>Explora el món 🌍</h1>
 
     <p>
-      Explora algunes de les destinacions més interessants del món.
+      Descobreix destinacions increïbles,
+      cultures úniques i experiències inoblidables.
     </p>
 
     <RouterLink to="/destinacions" class="btn">
       Veure destinacions
     </RouterLink>
-  </section>
+  </div>
 </template>
 
 <style scoped>
 .home {
   text-align: center;
-  padding: 3rem;
+  padding: 4rem 2rem;
+}
+
+.home h1 {
+  font-size: 3rem;
+}
+
+.home p {
+  color: #64748b;
+  max-width: 700px;
+  margin: 1rem auto;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 1rem;
-  background: #1976d2;
+  margin-top: 2rem;
+  background: #2563eb;
   color: white;
-  padding: 1rem 2rem;
-  border-radius: 10px;
   text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
 }
 
 .btn:hover {
-  background: #0d47a1;
+  background: #1d4ed8;
 }
 </style>
