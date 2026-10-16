@@ -1,14 +1,14 @@
 Guia de Viatges
-Descripció
-Guia de Viatges és una aplicació web desenvolupada amb Vue 3 que permet consultar diferents destinacions turístiques. Les dades es llegeixen des de Cloud Firestore i es mostren dinàmicament a la web.
+Temàtica i descripció
+Guia de Viatges és una aplicació web desenvolupada amb Vue 3 que permet consultar diferents destinacions turístiques d'arreu del món.
+
+La informació es recupera dinàmicament des de Cloud Firestore i es mostra a través de components reutilitzables. La web inclou navegació mitjançant Vue Router i està publicada amb Firebase Hosting.
 
 Tecnologies utilitzades
 Vue 3
 Vue Router
+Vite
 Firebase Hosting
 Cloud Firestore
-Vite
-Instal·lació
-Instal·lar les dependències:
-
+Instal·lació de dependències
 npm install
