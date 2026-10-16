@@ -1,88 +1,101 @@
 <template>
-  <section class="hero">
-    <div class="overlay">
-      <h1>Descobreix el món</h1>
-      <p>
-        Explora destinacions úniques, descobreix noves cultures
-        i inspira el teu pròxim viatge.
-      </p>
 
-      <RouterLink to="/destinacions" class="btn">
-        Explorar destinacions
-      </RouterLink>
-    </div>
-  </section>
+<section class="hero">
 
-  <section class="features">
-    <div class="feature">
-      <h3>Destinacions seleccionades</h3>
-      <p>Consulta llocs destacats d'arreu del món.</p>
+  <div class="left">
+
+    <div class="small">
+      GUIA DE VIATGES INTERNACIONAL
     </div>
 
-    <div class="feature">
-      <h3>Dades en temps real</h3>
-      <p>Informació emmagatzemada i consultada des de Firestore.</p>
-    </div>
+    <h1>
+      EXPLO-
+      <br>
+      RA
+      <br>
+      EL MÓN
+    </h1>
 
-    <div class="feature">
-      <h3>Experiència moderna</h3>
-      <p>Navegació ràpida gràcies a Vue Router.</p>
-    </div>
-  </section>
+    <p>
+      Descobreix noves cultures, ciutats sorprenents
+      i destinacions seleccionades d'arreu del món.
+    </p>
+
+  </div>
+
+  <div class="right">
+    https://images.unsplash.com/photo-1500530855697-b586d89ba3ee
+  </div>
+
+</section>
+
+<section class="cards">
+
+  <div class="card">
+    <h3>Destinacions exclusives</h3>
+    <p>Selecció de ciutats i llocs únics.</p>
+  </div>
+
+  <div class="card">
+    <h3>Informació en temps real</h3>
+    <p>Dades llegides directament de Firestore.</p>
+  </div>
+
+  <div class="card">
+    <h3>Experiència moderna</h3>
+    <p>Aplicació desenvolupada amb Vue i Firebase.</p>
+  </div>
+
+</section>
+
 </template>
 
 <style scoped>
-.hero {
-  height: 80vh;
-  background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-  overflow: hidden;
+
+.hero{
+  min-height:80vh;
+  display:grid;
+  grid-template-columns:1fr 500px;
+  gap:60px;
+  align-items:center;
 }
 
-.overlay {
-  height: 100%;
-  background: rgba(0,0,0,.5);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 60px;
+.small{
+  letter-spacing:3px;
+  font-size:.8rem;
 }
 
-.overlay h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
+h1{
+  font-family:'Bebas Neue';
+  font-size:10rem;
+  line-height:.8;
+  color:#5D8EF0;
+  margin:20px 0;
 }
 
-.overlay p {
-  max-width: 600px;
-  font-size: 1.2rem;
+p{
+  font-size:1.2rem;
+  max-width:500px;
 }
 
-.btn {
-  margin-top: 2rem;
-  width: fit-content;
-  background: white;
-  color: black;
-  text-decoration: none;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  font-weight: bold;
+.right img{
+  width:100%;
+  border-radius:20px;
+  height:600px;
+  object-fit:cover;
 }
 
-.features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 50px;
+.cards{
+  margin:80px 0;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
 }
 
-.feature {
-  background: white;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+.card{
+  background:white;
+  padding:30px;
+  border-radius:20px;
 }
+
 </style>

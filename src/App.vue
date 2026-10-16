@@ -6,12 +6,6 @@ import SiteFooter from './components/SiteFooter.vue'
 <template>
   <SiteHeader />
 
-  <nav>
-    <RouterLink to="/">Inici</RouterLink>
-    <RouterLink to="/destinacions">Destinacions</RouterLink>
-    <RouterLink to="/sobre">Sobre</RouterLink>
-  </nav>
-
   <main class="container">
     <RouterView />
   </main>
@@ -20,30 +14,27 @@ import SiteFooter from './components/SiteFooter.vue'
 </template>
 
 <style>
-body {
-  margin: 0;
-  background: #f8fafc;
-  font-family: Inter, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --background:#F5F3E8;
+  --blue:#5D8EF0;
+  --dark:#121212;
 }
 
-nav {
-  background: white;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+body{
+  margin:0;
+  background:var(--background);
+  font-family:'Inter',sans-serif;
+  color:var(--dark);
 }
 
-nav a {
-  text-decoration: none;
-  color: #334155;
-  font-weight: 600;
+*{
+  box-sizing:border-box;
 }
 
-.container {
-  max-width: 1300px;
-  padding: 2rem;
-  margin: auto;
+.container{
+  width:min(1400px,90%);
+  margin:auto;
 }
 </style>
