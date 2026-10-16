@@ -2,7 +2,7 @@
 <footer>
 
 <p>
-Guia de Viatges · Desenvolupat amb Vue i Firebase
+Guia de Viatges · Desenvolupat per Jana Caball · 2026
 </p>
 
 </footer>
