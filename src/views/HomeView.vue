@@ -8,13 +8,11 @@
       GUIA DE VIATGES INTERNACIONAL
     </div>
 
-    <h1>
-      EXPLO-
-      <br>
-      RA
-      <br>
-      EL MÓN
-    </h1>
+   <h1>
+    EXPLOREM
+    <br>
+    EL MÓN
+  </h1>
 
     <p>
       Descobreix noves cultures, ciutats sorprenents
@@ -24,7 +22,8 @@
   </div>
 
 <div class="right">
-  https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80
+  https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?
+  auto=format&fit=crop&w=1200&q=80
 </div>
 
 </section>
@@ -53,10 +52,10 @@
 <style scoped>
 
 .hero{
-  min-height:80vh;
+  min-height:85vh;
   display:grid;
-  grid-template-columns:1.2fr .8fr;
-  gap:80px;
+  grid-template-columns:1fr 600px;
+  gap:70px;
   align-items:center;
   padding:40px 0;
 }
@@ -68,9 +67,10 @@
 
 h1{
   font-family:'Bebas Neue';
-  font-size:clamp(8rem,12vw,13rem);
+  font-size:9rem;
   line-height:.85;
   color:#5D8EF0;
+  margin:0;
 }
 
 p{
@@ -80,9 +80,10 @@ p{
 
 .right img{
   width:100%;
-  border-radius:20px;
-  height:600px;
+  height:700px;
   object-fit:cover;
+  border-radius:30px;
+  display:block;
 }
 
 .cards{

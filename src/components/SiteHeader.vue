@@ -1,63 +1,63 @@
 <template>
-  <header>
-    <nav>
+  <header class="header">
 
-      <div class="links">
-        <RouterLink to="/">INICI</RouterLink>
-        <RouterLink to="/destinacions">DESTINACIONS</RouterLink>
-        <RouterLink to="/sobre">SOBRE</RouterLink>
-      </div>
+    <div class="left">
+      <RouterLink to="/">INICI</RouterLink>
+      <RouterLink to="/destinacions">DESTINACIONS</RouterLink>
+      <RouterLink to="/sobre">SOBRE</RouterLink>
+    </div>
 
-      <div class="logo">
-        GUIA DE VIATGES
-      </div>
+    <div class="center">
+      GUIA DE VIATGES
+    </div>
 
-      <a
-        href="/destinacions"
-        class="btn"
-      >
+    <div class="right">
+      <RouterLink class="btn" to="/destinacions">
         EXPLORAR
-      </a>
+      </RouterLink>
+    </div>
 
-    </nav>
   </header>
 </template>
 
 <style scoped>
 
-header{
-  padding:25px 0;
-}
-
-nav{
-  display:flex;
-  justify-content:space-between;
+.header{
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
   align-items:center;
+  padding:30px 0;
 }
 
-.links{
+.left{
   display:flex;
-  gap:30px;
+  gap:40px;
+}
+
+.center{
+  text-align:center;
+  font-family:'Bebas Neue';
+  font-size:3rem;
+  letter-spacing:3px;
+}
+
+.right{
+  display:flex;
+  justify-content:flex-end;
 }
 
 a{
   text-decoration:none;
-  color:#222;
-  font-size:.9rem;
+  color:#111;
   font-weight:600;
-}
-
-.logo{
-  font-family:'Bebas Neue';
-  font-size:2rem;
-  letter-spacing:2px;
 }
 
 .btn{
   background:#5D8EF0;
   color:white;
-  padding:12px 25px;
-  border-radius:100px;
+  padding:14px 30px;
+  border-radius:999px;
 }
 
 </style>
