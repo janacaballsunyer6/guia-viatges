@@ -1,25 +1,19 @@
 <template>
-  <header class="hero">
-    <h1>✈️ Guia de Viatges</h1>
-    <p>Descobreix els millors destins del món</p>
+  <header>
+    <h1>Guia de Viatges</h1>
   </header>
 </template>
 
 <style scoped>
-.hero {
-  background: linear-gradient(135deg, #0f172a, #2563eb);
-  color: white;
+header {
+  background: white;
+  padding: 1.5rem;
   text-align: center;
-  padding: 5rem 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
 }
 
-.hero h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.3rem;
-  opacity: 0.9;
+h1 {
+  margin: 0;
+  color: #0f172a;
 }
 </style>

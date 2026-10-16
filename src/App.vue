@@ -22,8 +22,8 @@ import SiteFooter from './components/SiteFooter.vue'
 <style>
 body {
   margin: 0;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
   background: #f8fafc;
+  font-family: Inter, sans-serif;
 }
 
 nav {
@@ -33,8 +33,6 @@ nav {
   justify-content: center;
   gap: 2rem;
   box-shadow: 0 2px 10px rgba(0,0,0,.08);
-  position: sticky;
-  top: 0;
 }
 
 nav a {
@@ -43,13 +41,9 @@ nav a {
   font-weight: 600;
 }
 
-nav a:hover {
-  color: #2563eb;
-}
-
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
+  padding: 2rem;
   margin: auto;
-  padding: 3rem 2rem;
 }
 </style>
